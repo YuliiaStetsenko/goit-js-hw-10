@@ -8,6 +8,104 @@
 @import url('./vite-promo.css');
 @import url('./header.css');
 
+.timet {
+  display: flex;
+  padding: 36px 929px 316px 156px;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 32px;
+  column-gap: 8px;
+  width: 356px;
+
+  background: #fff;
+}
+
+#datetime-picker {
+  width: 138px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 8px 118px 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.64px;
+}
+
+button[data-start] {
+  display: inline-block;
+  padding: 8px 16px;
+  border: transparent;
+  border-radius: 8px;
+  outline: transparent;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4e75ff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms ease-in;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+
+button:disabled {
+  color: #989898;
+  background: #cfcfcf;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  width: 346px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -22,4 +120,153 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+/*-----------Snackbar-----------*/
+form.form {
+  width: 1440px;
+  height: 496px;
+  background: #fff;
+}
+
+label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 68px;
+  margin-left: 156px;
+
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.delay {
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+input[type='number' i]:active {
+  border: 1px solid #4e75ff;
+}
+
+.delay:hover {
+  border: 1px solid #000;
+}
+
+.delay:active {
+  border: 1px solid #4e75ff;
+}
+
+.radio {
+  width: 32px;
+  height: 32px;
+}
+
+#text {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+legend {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.64px;
+}
+
+fieldset {
+  width: 360px;
+  height: 64px;
+  flex-shrink: 0;
+  padding: 0;
+  margin-top: 28px;
+
+  stroke-width: 1px;
+  stroke: #808080;
+  margin-left: 156px;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+fieldset:hover,
+fieldset:active {
+  border: 1px solid #000;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row;
+  width: 104px;
+  color: #2e2f42;
+  margin: 0px;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.snackbar {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  margin-left: 156px;
+  border-radius: 8px;
+  border-right-color: #4e75ff;
+  border-left-color: #4e75ff;
+  border-top-color: #4e75ff;
+  border-bottom-color: #4e75ff;
+  background: #4e75ff;
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.snackbar:hover {
+  background: #6c8cff;
+  border-top-color: #6c8cff;
+  border-bottom-color: #6c8cff;
+  border-right-color: #6c8cff;
+  border-left-color: #6c8cff;
 }
